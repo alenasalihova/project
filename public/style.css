@@ -1,0 +1,464 @@
+body {
+    max-width: 1000px;
+    width: 100%;
+    min-width: 600px;
+    margin: auto;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.first, .wrap {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*logo + menu*/
+.first {
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    justify-content: space-evenly;
+}
+.logo {
+    height: 50px;
+    margin: 5px 0 5px 10px;
+}
+div .logotext {
+    color:rgb(79, 157, 205);
+    font-weight: 700;
+    margin: 15px 0 0 20px;
+}
+.spaсe {
+    flex-basis: 40%;
+}
+ul#menu {
+    list-style-type: none;
+    display: flex;
+}
+
+ul#menu li {
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    width: max-content;
+    margin-left: 10px;
+}
+
+ul#menu li.active {
+    transform: scale(1.5);
+    z-index: 20;
+}
+nav a, .aboutus{
+    color:rgb(79, 157, 205);
+    text-decoration: none;
+    font-weight: 700;  
+}
+
+/*header*/
+header {
+    background-image: url(img/фон\ титул.png);
+    background-size: 110% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%; 
+    margin: 0;
+    position: relative;
+    display: grid;
+}
+.level{
+    color: rgb(209, 234, 250);
+    margin-top: 100px;
+    margin-left: 400px;
+    position: absolute; 
+}
+.buttons {
+    display: flex;
+    justify-self: flex-end;
+}
+.buttons button {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    border: 0;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 400px;
+}
+#dateAndClock {
+    color: #97d0f3;
+    margin-left: 20px;
+}
+.inst {
+    background-image: url(img/images2.png);  
+}
+.inst:hover {
+    background-image: url(img/images22.png);
+}
+.face {
+    background-image: url(img/images4.png);
+}
+.face:hover {
+    background-image: url(img/images44.png);
+}
+.pics {
+    background-image: url(img/images7.png);
+}
+.pics:hover {
+    background-image: url(img/images77.png);
+}
+.vib {
+    background-image: url(img/images5.png);
+}
+.vib:hover {
+    background-image: url(img/images55.png);
+}
+
+/* пакетные туры */
+.wrap {
+    height: 150px; 
+    margin-top: 20px;
+}
+.card {
+    height: 120px;
+    background-image: url(img/nature-okean.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+}
+.details{
+    width: 150px;
+    background-color: white;
+    color: rgb(79, 157, 205);
+    padding: 15px 0 0 40px;
+    font-size: small;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    background-image: url(img/depositphotos1.png);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.packageTours {
+    background-color: rgb(0 0 0 / 54%);
+    color: rgb(79, 157, 205);;
+    width: 660px;
+    height: 70px;
+    position: absolute;
+    top: 39px;
+    left: 30px;
+    line-height: 0.25;
+    display: flex;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.one {
+    padding-top: 10px;
+    flex-direction: row;
+}
+.one strong {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+select {
+    width: 200px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+input {
+    width: 150px;
+    margin-top: 19px;
+    margin-left: 5px;
+}
+#button {
+    width: 120px;
+    height: 22px;
+    background-color: rgb(204, 199, 41);
+    margin: 33px 5px 0 10px;
+    color: rgb(79, 157, 205);
+    font-weight: 600;
+}
+#button:hover {
+    font-weight: 300;
+    box-shadow: inset 2px 2px 2px rgb(46, 63, 113);
+}
+ /*о нас*/
+#aboutus{
+    width: 100%;
+    height: 820px;
+    background-image: url(img/pngwi.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    border-bottom-right-radius: 300px;
+    border-top-right-radius: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    text-align: center;
+}
+.block1 {
+    width: 60%;
+    text-align: justify;
+    font-style: italic;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+p {
+    font-size: small;
+}
+/*погода*/
+.weather {
+    width: 35%;
+    height: 160px;
+    padding: 10px;
+    margin-top: 300px;
+    border-radius: 30px;
+    background-image: url(./img/погода1.png);
+}
+.box {
+    display: flex;
+}
+.info {
+    margin-left: 10px;
+
+    font-size: small;
+}
+#weather-icon {
+    width: 80px;
+}
+
+ /*туры*/
+ #box4 {
+    padding-top: 50px;
+}
+.hotel1, .hotel2, .hotel3, .hotel4 {
+    border: 3px solid gray;
+    height: 700px;
+}
+.item {
+    margin: 0 10px 0 10px;
+}
+.FUN {
+    width: 100%;
+    height: 300px;
+}
+.icons {
+    width: 20px;
+}
+.services {
+    list-style-type: none;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+#details, .buttonSend {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(79, 157, 205);
+}
+#details {
+    left: 200px;
+    bottom: 25px;
+}
+.text {
+    padding: 0 10px 5px 10px;
+}
+/*контакты*/
+#contacts_all {
+    font-size: large;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+.contacts_numbers, .contacts_schedule {
+    display: grid;
+    justify-content: flex-start;
+}
+.address{
+    display: block;
+    margin-bottom: 10px;
+}
+iframe {
+    display: block;
+    width: 600px;
+    height: 450px;
+    border: 0;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+.clear {
+    clear: both;
+}
+/*footer*/
+footer {
+    color: white;
+    background-color: rgb(40, 53, 92);
+    font-size: small;
+}
+#box1 ul {
+    list-style-type: none;
+    padding-top: 10px;
+    margin: 0 0 10px 20px;
+}
+#box2 {
+    text-align: center;
+    height: 30px;
+}
+
+@media (min-width:600px) and (max-width:850px){
+    .level{
+        margin-top: 70px;
+        margin-left: 250px;
+    }
+    #details {
+        left: 170px;
+    }
+    .block1 {
+        width:60%;
+        font-weight: 600;
+    }
+    .wrap {
+        height: 250px;
+    }
+    .card {
+        height: 200px;
+    }
+    .packageTours { 
+        left: 5px;
+        width: 590px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 130px;
+    }
+    .details {
+        left: 5px;
+    }
+    #button {
+        margin: 20px 5px 0 10px;
+    }
+    iframe {
+        width: 90%;
+        height: 400px;
+    }
+    .weather {
+        height: 200px;
+    }
+    #aboutus {
+        background-size: 115%;
+    }
+}
+@media screen and (max-width:600px){
+    body {
+        width: 100%;
+        max-width: 600px;
+    }
+    .level{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    header {
+        height: 400px;
+    }
+    .buttons button {
+        margin-top: 350px;
+    }
+    nav ul {
+        margin: 0;
+        padding-top: 20px;
+    }
+    .block1 {
+        width: 60%;
+    }
+    .wrap {
+        height: 250px;
+    }
+    .card {
+        height: 200px;
+    }
+    .packageTours { 
+        left: 5px;
+        width: 590px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 130px;
+    }
+    .details {
+        left: 8px;
+    }
+    #details {
+       left: 160px;
+    }
+    #button {
+        margin: 20px 5px 0 10px;
+    }
+    .buttons button {
+        margin-top: 300px;
+    }
+    .block1 {
+        width:90%;
+        font-weight: 700
+    }
+    .weather {
+        height: 250px;
+    }
+    #hottours {
+        grid-template-columns: 70%;
+    }
+    iframe {
+        width: 90%;
+        height: 300px;
+    }
+    #aboutus {
+        background-size: 130%;
+    }
+}
+/* кнопка вверх*/
+    .scrollToTop { 
+        opacity:0;
+        width:60px;
+        height:60px;
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        z-index:500;
+        transition: all .5s ease-in-out;
+        text-align:center;
+        cursor:pointer;
+        border:1px solid transparent;
+        border-radius:4px;
+        background:#7297b6;
+    }
+    .scrollToTop span { 
+        margin-top:12px;
+        color:#FFF;
+    }
+    .showScrollTop{ 
+        font-size:14px;
+        opacity:0.5;
+    }
+    .scrollToTop:hover{
+        background-color:#1864df;
+        border-radius:100%;
+    }
+    .scrollToTop:active{
+        background-color:#903dc8;
+    }
+    .fa-chevron-up {
+        font-size: xx-large;
+    }
+
+    #clock {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #date {
+        font-size: 18px;
+    }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Форма для отправки письма</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+body {
+    width: 600px;
+    margin-left: 20px;
+}
+.first {
+    width: 100%;
+}
+.formEmail {
+    width: 600px;
+    border: 3px solid gray;
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column;
+}
+.buttonSend {
+    left: 450px;
+    top: 270px;
+}
+.formEmaill {
+    padding-left: 10px;
+}    
+    </style>
+</head>
+<body>
+    <div class="first"><a href="#"><img src="img/homa.png" alt="logo" class="logo"></a>
+        <div class="logotext">LEVEL TRAVEL</div>
+        <div class="spaсe"></div>
+        <ul id="menu">
+        <li><a href="Journey.html" class="aboutus">НА ГЛАВНУЮ СТРАНИЦУ</a></li>
+        </ul>
+    </div>
+    <div class="formEmail">
+    <h1>Свяжитесь с нами</h1>
+
+    <form class="formEmaill" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Ваш Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input class="buttonSend" type="submit" value="Отправить">
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type='text/javascript' src='jquery.js?v=2.1.3'></script>
+</head>
+<body>
+    <div class="first"><a href="#"><img src="img/homa.png" alt="logo" class="logo"></a>
+        <div class="logotext">LEVEL TRAVEL</div>
+        <div class="spaсe"></div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#aboutus" class="aboutus" id="menu-item-1">ПРО НАС</a></li>
+                <li><a href="#box4" class="hottours" id="menu-item-2">ГОРЯЧИЕ ТУРЫ</a></li>
+                <li><a href="#contacts_all" class="contacts" id="menu-item-3">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div class="level"><h1>LEVEL TRAVEL</h1></div>
+        <div id="dateAndClock">
+            <div id="clock"></div>
+            <div id="date"></div>
+        </div>
+        <div class="buttons">
+            <button class="inst" type="button"></button>
+            <button class="face" type="button"></button>
+            <button class="pics" type="button"></button>
+            <button class="vib" type="button"></button>
+        </div>
+    </header>
+   <div class="clear"></div>
+    <main>
+        <div class="wrap">   
+            <div class="card">
+                <div class="details">
+                    <strong>ПАКЕТНЫЕ ТУРЫ</strong>
+                </div>
+                <form class="packageTours">
+                    <label class="one">
+                        <strong>КУДА</strong>
+                        <select id="arrivalcity" name="arrivalcity">
+                            <option>Анталия</option>
+                            <option>Стамбул</option>
+                            <option>Анкара</option>
+                          </select>
+                    </label>
+                    <label class="one">
+                        <strong>ОТКУДА</strong>
+                        <select id="departcity" name="departcity">
+                            <option>Киев</option>
+                            <option>Одесса</option>
+                            <option>Львов</option>
+                          </select>
+                    </label>
+                    <label class="one">
+                        <strong>ДАТА ВЫЛЕТА</strong>
+                        <input type="date" id="date" name="date" />
+                    </label>
+                    <button type="submit" id="button">В ПУТЬ</button>
+                </form>
+            </div>
+        </div>
+        <div id="aboutus">
+            <div class="block1">
+                <h1>О нас</h1>
+                <p>Уважаемые любители путешествовать, Мы рады Вас приветствовать 
+                    в нашем новом офисе Сети Туристических Агентств «Level travel»,  
+                    который расположен в историческом центре города Чернигова!</p>
+                <p>Что такое путешествие? Для Нас, это то, что способно дарить 
+                    людям новые незабываемые впечатления и позитивные эмоции. 
+                    Находясь в другой стране, мы попадаем в иной, не привычный 
+                    для нас мир, в другие условия природы, быта, общества. 
+                    Мы впитываем в себя все особенности мест, где путешествуем, 
+                    и это то, что с нами остается на всю жизнь.</p>
+                <p>Наши положительные воспоминания - это 
+                    уникальная возможность проживать некоторые моменты нашей жизни 
+                    вновь, испытывая те же чувства и эмоции. И не важно, какое 
+                    направление в этот раз Вы выберете, каждый миг Вашего 
+                    путешествия будет иной и не забываемый. Будь-то морской 
+                    курорт, на котором вы наслаждаетесь морем, пляжем и воздухом; 
+                    будь-то страна, обогащающая наш культурный уровень; будь то 
+                    горнолыжный курорт, где Вы проведете активный отдых и получите 
+                    дозу адреналин. Абсолютно любая поездка подарит Вам 
+                    незабываемые ощущения и это ощущения счастья, которое будет 
+                    еще долго «заряжать» Вас в серых рабочих буднях! Мы любим и 
+                    ценим своих клиентов, каждый турист для нас особенный и к 
+                    каждому туристу мы подберем индивидуальный подход! Опытные 
+                    менеджеры подберут для Вас именно Ваш незабываемый тур, а 
+                    также помогут в составлении индивидуальных маршрутов, 
+                    посоветуют где весело отдохнуть с друзьями, провести медовый 
+                    месяц, увидеть экзотические странны и мировые святыни, или 
+                    погреться на теплом морском берегу под ласковыми лучами 
+                    солнца.</p>
+                <p>Мы предоставляем Вам качественный сервис обслуживания!
+                </p>
+            </div>
+            <div class="weather">
+                <h2 id="city" class="city" contenteditable="true"></h2>
+                <div class="box">
+                    <div class="imge">
+                        <img src="" alt="Weather Icon" id="weather-icon">
+                    </div>
+                    <div class="info">
+                        <div id="temperature" class="temperature"></div>
+                        <div id="weather-description" class="weather-description"></div>
+                        <div id="wind-speed" class="wind-speed"></div>
+                        <div id="precipitation" class="precipitation"></div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+        <div id="box4">
+            <h1>Горячие туры</h1>
+
+            <div id="customers-testimonials" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="hotel1">
+                        <img src="img/booking4842_1.png" alt="FUN" class="FUN">
+                        <div class="text"><h3>FUN &amp; SUN FAMILY Club</h3>
+                        <span>Кипр, Айя-Напа 4 звезды</span>
+                        <ul class="services">
+                            <li><img src="img/календарь.png" alt="Календарь" class="icons"> с 27.05 по 04.06 (8 ночей)</li>
+                            <li><img src="img/выезд.png" alt="Выезд" class="icons"> Виезд с Киева</li>
+                            <li><img src="img/еда.png" alt="Еда" class="icons"> Завтрак + ужин</li>
+                        </ul>
+                        <hr>
+                        <h2>25 785 грн</h2>
+                        <span>за 2 человек</span>
+                        <button type="submit" id="details">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hotel2">
+                        <img src="img/200466_1975857182.png" alt="Roma" class="FUN">
+                        <div class="text"><h3>Imperial sunland resort</h3>
+                        <span>Италия, Рим</span>
+                        <ul class="services">
+                            <li><img src="img/календарь.png" alt="Календарь" class="icons"> с 24.05 по 01.06 (8 ночей)</li>
+                            <li><img src="img/выезд.png" alt="Выезд" class="icons"> Виезд с Киева</li>
+                            <li><img src="img/еда.png" alt="Еда" class="icons"> Завтрак</li>
+                        </ul>
+                        <hr>
+                        <h2>20 368 грн</h2>
+                        <span>за 2 человек</span>
+                        <button type="submit" id="details">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hotel3">
+                        <img src="img/192282_699037272.png" alt="Turk" class="FUN">
+                        <div class="text"><h3>Marti Myra 5 звезд</h3>
+                        <span>Турцыя, Кемер</span>
+                        <ul class="services">
+                            <li><img src="img/календарь.png" alt="Календарь" class="icons"> с 29.05 по 05.06 (7 ночей)</li>
+                            <li><img src="img/выезд.png" alt="Выезд" class="icons"> Виезд со Львова</li>
+                            <li><img src="img/еда.png" alt="Еда" class="icons"> все включено</li>
+                        </ul>
+                        <hr>
+                        <h2>30 642 грн</h2>
+                        <span>за 2 человек</span>
+                        <button type="submit" id="details">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hotel4">
+                        <img src="img/image-05-b1.png" alt="Turkiz" class="FUN">
+                        <div class="text"><h3>Sentido Orka Lotus 5 звезд</h3>
+                        <span>Турцыя, Мармарис</span>
+                        <ul class="services">
+                            <li><img src="img/календарь.png" alt="Календарь" class="icons"> с 03.06 по 09.06 (7 ночей)</li>
+                            <li><img src="img/выезд.png" alt="Выезд" class="icons"> Виезд со Львова</li>
+                            <li><img src="img/еда.png" alt="Еда" class="icons"> все включено</li>
+                        </ul>
+                        <hr>
+                        <h2>33 578 грн</h2>
+                        <span>за 2 человек</span>
+                        <button type="submit" id="details">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts_all">
+            <h1>Контакты турагенции LEVEL TRAVEL</h1>
+            <div class="contacts_numbers">
+                <a href="tel" id="phoneLink">+38 093 573 97 46</a>
+                <a href="maito" id="emailLink">agency@leveltravel.com.ua</a>   
+                </div>
+            <h3>График работы</h3>
+            <div class="contacts_schedule">
+                <span>Пн-Пт:10:00-19:00</span>
+                <span>Сб: 11:00-17:00</span>
+                <span>Bc: выходной</span>
+                </div>
+            <h3>Адрес</h3>
+            <div class="address">
+                <span>34067, г. Чернигов ул.Космонавтов 28</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.536075502118!2d31.285380087295653!3d51.499124064552035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d54913d45a86b5%3A0xd2a02d1d8e0fbf00!2z0KbQo9Cc!5e0!3m2!1sru!2snl!4v1684603170997!5m2!1sru!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <a class="scrollToTop" onclick="jQuery('html,body').animate({scrollTop:0}, 'slow');"><span class="fa fa-chevron-up">&#8593;</span></a>
+    <footer>
+        <div class="clear">
+        <div id="box1">
+            <ul>
+                <li>ГЛАВНАЯ</li>
+                <li>ГОРЯЧИЕ ТУРЫ</li>          
+                <li>КОНТАКТЫ</li>
+            </ul>
+        </div>
+        <hr>
+        <div id="box2">Copyright &copy; Company 2018-2019</div>
+        </div>
+    </footer>
+    <script src="jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
